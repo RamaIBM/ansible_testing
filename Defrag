@@ -1,3 +1,9 @@
+---
 - name: Defragment all local volumes (in parallel)
-  win_defrag:
-    parallel: yes
+  hosts: all
+  
+  taks:
+  - name: Defragment volumes (in parallel)
+    win_defrag:
+      parallel: yes
+---
