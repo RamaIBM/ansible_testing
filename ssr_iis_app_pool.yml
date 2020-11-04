@@ -1,5 +1,5 @@
 ---
-- name: "{{ accion }}" IIS Application Pool
+- name: {{ accion }} IIS Application Pool
   hosts: all
  
   tasks:
