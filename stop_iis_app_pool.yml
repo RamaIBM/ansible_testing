@@ -6,5 +6,5 @@
 
   - name: Stop {{ app_pool_name }} an application pool
     win_iis_webapppool:
-      name: {{ app_pool_name }}
+      name: "{{ app_pool_name }}"
       state: stopped
