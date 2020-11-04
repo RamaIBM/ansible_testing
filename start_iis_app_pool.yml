@@ -1,0 +1,10 @@
+---
+- name: Start IIS Application Pool
+  hosts: all
+ 
+  tasks:
+
+  - name: Start {{ app_pool_name }} an application pool
+    win_iis_webapppool:
+      name: "{{ app_pool_name }}"
+      state: started
