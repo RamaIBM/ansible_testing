@@ -1,0 +1,4 @@
+- name: Stop an application pool
+  win_iis_webapppool:
+    name: AppPool
+    state: stopped
