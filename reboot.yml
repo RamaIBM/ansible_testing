@@ -5,3 +5,4 @@
   tasks:
   - name: Reboot the machine with all defaults
     win_reboot:
+       reboot_timeout: 900
